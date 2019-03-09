@@ -9,9 +9,48 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Text="Test page" Style="{StaticResource PageTitle_Style}"/>
-        <TextBlock x:Name="TimerLog" HorizontalAlignment="Left" Margin="223,164,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Time_1" HorizontalAlignment="Left" Margin="223,265,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Test page" Style="{StaticResource PageTitle_Style}" Grid.Row="0"/>
+        <TextBlock x:Name="TimerLog" HorizontalAlignment="Left" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBlock x:Name="Time_1" HorizontalAlignment="Left" Margin="50" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1"/>
+        <!-- Golden ration / Fibonacci squares -->
+        <Grid  Grid.Row="2" x:Name="GoldenRatio" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Text="1" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="3"/>
+            <TextBox Text="1" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="4"/>
+            <TextBox Text="2" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+            <TextBox Text="3" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+            <TextBox Text="5" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="5"/>
+            <TextBox Text="8" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="5" Grid.RowSpan="8" Grid.ColumnSpan="8"/>
+        </Grid>
+        <!-- Golden ration / Fibonacci squares -->
     </Grid>
 </Page>

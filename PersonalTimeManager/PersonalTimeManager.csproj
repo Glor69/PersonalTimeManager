@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\DispatcherForTimers.cs" />
     <Compile Include="Model\MenuItem.cs" />
     <Compile Include="View\ConfigurationsPage.xaml.cs">
       <DependentUpon>ConfigurationsPage.xaml</DependentUpon>

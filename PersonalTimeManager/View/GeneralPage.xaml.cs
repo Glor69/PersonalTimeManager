@@ -26,5 +26,6 @@ namespace PersonalTimeManager.View
         {
             this.InitializeComponent();
         }
+
     }
 }

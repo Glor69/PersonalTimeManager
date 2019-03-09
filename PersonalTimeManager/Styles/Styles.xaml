@@ -4,7 +4,7 @@
     xmlns:local="using:PersonalTimeManager">
 
     <Style x:Key="PageTitle_Style" TargetType="TextBlock">
-        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontSize" Value="50"/>
     </Style>
     
 </ResourceDictionary>
